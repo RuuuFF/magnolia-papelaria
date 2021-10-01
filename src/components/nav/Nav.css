@@ -1,0 +1,48 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.logo-container {
+  margin-right: 3.8rem;
+}
+
+:is(.links-wrapper, .buttons-wrapper) {
+  margin-bottom: -10px;
+}
+
+:is(.links, .buttons) {
+  display: flex;
+  flex-direction: row;
+}
+
+.links {
+  gap: 3.8rem;
+}
+
+.link {
+  color: var(--font-black);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  text-shadow: 0 0 1px var(--font-black);
+  text-decoration: underline;
+}
+
+.buttons-wrapper {
+  margin-left: 5rem;
+}
+
+.buttons {
+  gap: 1.6rem;
+}
+
+.buttons .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
