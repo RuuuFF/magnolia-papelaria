@@ -23,10 +23,10 @@ const Header = props => {
                 <span>coleção</span>
                 <span>Felícia</span>
               </h2>
-              <a href="/#">confira &gt;</a>
+              <a className="link-underline" href="/#">confira &gt;</a>
             </div>
-            <div className="banner-image">
-              <img src={image1} alt="First Image" />
+            <div className="banner-image-container">
+              <img className="banner-image" src={image1} alt="First" />
             </div>
           </div>
         </div>

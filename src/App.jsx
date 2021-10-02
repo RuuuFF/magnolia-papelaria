@@ -1,9 +1,8 @@
 import React, { Fragment } from 'react'
 
-import './App.css'
-
-import Header from './components/header/Header'
-import Nav from './components/nav/Nav'
+import Header from './layout/header/Header'
+import Nav from './layout/nav/Nav'
+import Main from './layout/main/Main'
 
 function App() {
   return (
@@ -11,6 +10,8 @@ function App() {
       <Header>
         <Nav />
       </Header>
+
+      <Main />
     </Fragment>
   )
 }

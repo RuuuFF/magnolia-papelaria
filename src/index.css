@@ -7,10 +7,12 @@
 :root {
   font-size: 62.5%;
 
-  --normal: 1.8rem;
-  --xnormal: 2.4rem;
-  --large: 4.8rem;
-  --xlarge: 11rem;
+  --xsmall: 1.6rem;
+  --small: 1.8rem;
+  --medium: 2rem;
+  --large: 2.4rem;
+  --xlarge: 4.8rem;
+  --xxlarge: 11rem;
 
   --black: #000;
   --white: #fff;
@@ -25,7 +27,7 @@
 body {
   background-color: var(--body-bg);
   font-family: "Poppins", sans-serif;
-  font-size: var(--normal);
+  font-size: var(--medium);
   line-height: 150%;
   overflow: overlay;
 }
@@ -67,4 +69,15 @@ body::-webkit-scrollbar-thumb:hover {
 
 ul {
   list-style-type: none;
+}
+
+.link-underline {
+  color: var(--font-black);
+  font-weight: 700;
+  font-size: var(--large);
+  transition: opacity 0.2s ease;
+}
+
+.link-underline:hover {
+  opacity: 0.8;
 }

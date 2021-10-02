@@ -44,25 +44,23 @@
 
 .banner-content h2 span:first-child {
   color: var(--font-white);
-  font-size: var(--large);
+  font-size: var(--xlarge);
   line-height: 150%;
   font-weight: 400;
 }
 
 .banner-content h2 span:last-child {
-  font-size: var(--xlarge);
+  font-size: var(--xxlarge);
   line-height: 150%;
   color: var(--green);
   text-transform: uppercase;
   margin-top: -35px;
 }
 
-.banner-content a {
-  color: var(--font-black);
-  font-weight: 700;
-  font-size: var(--xnormal);
+.banner-image-container {
+  margin-right: -180px;
 }
 
 .banner-image {
-  margin-right: -180px;
+  width: 100%;
 }
