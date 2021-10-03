@@ -9,8 +9,10 @@ const Nav = () => {
   return (
     <nav>
       <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo" />
-        <h1 className="sr-only">Magnólia Papelaria</h1>
+        <a href="/#">
+          <img src={logo} alt="Logo" className="logo" />
+          <h1 className="sr-only">Magnólia Papelaria</h1>
+        </a>
       </div>
 
       <div className="links-wrapper">

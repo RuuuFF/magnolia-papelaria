@@ -18,10 +18,11 @@
   --white: #fff;
   --green: #002532;
 
-  --font-black: var(--black);
-  --font-white: var(--white);
+  --font-black: #000;
+  --font-white: #fff;
 
   --body-bg: #ffffff;
+  --card-bg: #f4f4f4;
 }
 
 body {

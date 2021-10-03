@@ -1,0 +1,20 @@
+.shopping-step {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  max-width: 24rem;
+  width: 100%;
+  text-align: center;
+}
+
+.shopping-image {
+  width: 53%;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.shopping-description {
+  font-size: var(--large);
+  font-weight: 500;
+  line-height: 150%;
+}

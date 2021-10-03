@@ -1,3 +1,5 @@
+import './Product.css'
+
 const Product = props => {
   return (
     <article className="product">
@@ -7,7 +9,7 @@ const Product = props => {
         <span className="product-brand">{ props.brand }</span>
         <span className="product-price">R&#36;{ props.price }</span>
       </a>
-      { props.soldOut === true ? <span className="product-soud-out">Esgotado&#33;</span> : ''}
+      { props.soldOut ? <span className="product-soud-out">Esgotado&#33;</span> : '' }
     </article>
   )
 }

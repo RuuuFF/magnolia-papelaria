@@ -21,70 +21,144 @@
   gap: 10rem;
 }
 
-.product {
+.card-wrapper {
+  background-color: var(--card-bg);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  padding: 4.8rem 0;
+}
+
+.card-content {
+  width: 22%;
+}
+
+.card-content h2 {
+  font-size: var(--xlarge);
+  text-transform: uppercase;
+  margin: 2.2rem 0 1.8rem;
+}
+
+.card-content h2 span:first-child {
+  margin-bottom: 2.6rem;
+  display: inline-block;
+}
+
+.card-content p {
+  font-size: var(--large);
+  line-height: 150%;
+}
+
+.card-content p span {
+  font-weight: 700;
+}
+
+.card-image-container {
+  width: 78%;
+}
+
+.card-image {
   width: 100%;
-  max-width: 25rem;
+}
+
+.card-content .link-underline {
+  display: inline-block;
+  margin-top: 3.2rem;
+}
+
+.testimonial-wrapper {
+  padding: 5.8rem 0;
+}
+
+.testimonial-container {
+  width: 100%;
+  max-width: 77rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
   position: relative;
 }
 
-.product:nth-child(2) {
-  transform: translateY(-6.4rem);
+.testimonial-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 97%;
+  padding-bottom: 37.6%;
+  border-radius: 2.8rem;
+  transform: translate(-50%, -50%) rotate(-4.73deg);
+  background-color: #ffeca8;
+  z-index: -1;
 }
 
-.product a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
+.testimonial-container::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  right: -2.8rem;
+  width: 18.44%;
+  padding-bottom: 14.15%;
+  transform: rotate(-5.82deg);
+  background-image: url("../../assets/icons/quotation-marks.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.product-image {
-  width: 100%;
-  object-fit: contain;
-  margin-bottom: 1.6rem;
+.testimonial-button-container {
+  width: 17%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-:is(.product-name, .product-brand, .product-price) {
+.testimonial-button {
+  background-color: transparent;
+  padding: 10px;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.testimonial-button:hover {
+  opacity: 0.7;
+}
+
+.testimonial-content {
+  width: 66%;
+  text-align: center;
+  padding: 8.6rem 0 6.8rem;
+}
+:is(.testimonial, .testimonial-author) {
   display: block;
-  color: var(--font-black);
-}
-
-:is(.product-name, .product-brand) {
   font-size: var(--small);
 }
 
-:is(.product-name, .product-price) {
+.testimonial-author {
+  margin-top: 2.6rem;
   font-weight: 700;
 }
 
-:is(.product-name:hover, .product-price:hover) {
-  text-decoration: underline;
+.shopping-container {
+  padding: 0 0 9.2rem;
 }
 
-.product-name {
-  text-transform: uppercase;
+.shopping-container > header {
+  margin-bottom: 6rem;
 }
 
-.product-price {
-  font-size: var(--medium);
-  margin-top: 0.8rem;
-}
-
-.featured-products-container footer {
+.shopping-title {
   text-align: center;
-  margin-top: 1.8rem;
+  font-size: var(--xlarge);
 }
 
-.product-soud-out {
-  background-color: #ff1850;
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-weight: 700;
-  font-size: var(--medium);
-  color: var(--font-white);
-  text-transform: uppercase;
-  padding: 0.8rem 2rem;
-  border-radius: 1.5rem;
-  z-index: 10;
+.shopping-steps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 11.36rem;
 }
