@@ -27,10 +27,20 @@
 
 body {
   background-color: var(--body-bg);
-  font-family: "Poppins", sans-serif;
   font-size: var(--medium);
-  line-height: 150%;
   overflow: overlay;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+input,
+label,
+button {
+  line-height: 150%;
+  font-family: "Poppins", sans-serif;
 }
 
 body::-webkit-scrollbar {

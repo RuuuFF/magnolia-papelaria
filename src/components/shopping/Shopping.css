@@ -1,0 +1,20 @@
+.shopping-container {
+  padding: 0 0 9.2rem;
+}
+
+.shopping-container > header {
+  margin-bottom: 6rem;
+}
+
+.shopping-title {
+  text-align: center;
+  font-size: var(--xlarge);
+}
+
+.shopping-steps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 11.36rem;
+}

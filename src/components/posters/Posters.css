@@ -1,0 +1,116 @@
+.posters-container {
+  display: grid;
+  grid-template-columns: 59.1666% 38.8333%;
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem;
+  margin-bottom: 6.8rem;
+}
+
+.posters-container .poster {
+  background-color: rgba(77, 36, 45, 0.86);
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.posters-container .poster:hover {
+  background-color: rgba(77, 36, 45, 0.6);
+}
+
+.poster:is(:nth-of-type(1), :nth-of-type(2)) {
+  padding-bottom: 38.73239436619718%;
+}
+
+.posters-container .poster:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.posters-container .poster:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.posters-container .poster:nth-child(3) {
+  grid-column: 2;
+  grid-row: 1 / 2 span;
+}
+
+.posters-container .poster::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  z-index: -1;
+  mix-blend-mode: multiply;
+}
+
+.posters-container .poster:nth-child(1)::after {
+  background-image: url("../../assets/images/image6.png");
+}
+
+.posters-container .poster:nth-child(2)::after {
+  background-image: url("../../assets/images/image7.png");
+}
+
+.posters-container .poster:nth-child(3)::after {
+  background-image: url("../../assets/images/image8.png");
+}
+
+.poster .poster-content {
+  position: absolute;
+  top: 50%;
+}
+
+.poster:is(:nth-of-type(1), :nth-of-type(2)) .poster-content {
+  left: 6.8rem;
+  transform: translateY(-50%);
+}
+
+.poster:nth-of-type(3) .poster-content {
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.poster:nth-of-type(1) .poster-title span:first-child {
+  font-size: 3.8rem;
+  font-weight: 400;
+}
+
+.poster:nth-of-type(1) .poster-title span:last-child {
+  font-size: var(--xlarge);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.poster :is(.poster-title, p) {
+  color: var(--font-white);
+}
+
+.poster:nth-of-type(2) .poster-title span:first-child {
+  font-size: var(--xlarge);
+  text-transform: uppercase;
+}
+
+.poster:nth-of-type(2) .poster-title span:last-child {
+  font-size: 3.8rem;
+  font-weight: 400;
+}
+
+.poster:nth-of-type(3) :is(.poster-title, p) {
+  text-align: center;
+}
+
+.poster:nth-of-type(3) .poster-title {
+  font-size: var(--xlarge);
+  text-transform: uppercase;
+}
+
+.poster:nth-of-type(3) p {
+  margin-top: 2.4rem;
+  font-size: var(--large);
+}

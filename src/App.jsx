@@ -3,6 +3,7 @@ import React, { Fragment } from 'react'
 import Header from './layout/header/Header'
 import Nav from './layout/nav/Nav'
 import Main from './layout/main/Main'
+import Footer from './layout/footer/Footer'
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
       </Header>
 
       <Main />
+
+      <Footer>
+        <Nav />
+      </Footer>
     </Fragment>
   )
 }

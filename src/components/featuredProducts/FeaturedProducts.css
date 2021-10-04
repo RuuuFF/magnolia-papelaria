@@ -1,0 +1,21 @@
+.featured-products-container {
+  padding: 6.4rem 0;
+}
+
+.featured-products-container > header {
+  margin-bottom: 10.4rem;
+}
+
+.featured-products-container h3 {
+  font-size: var(--xlarge);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.featured-products {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}

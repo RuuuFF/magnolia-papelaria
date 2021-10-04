@@ -1,0 +1,41 @@
+.card-wrapper {
+  background-color: var(--card-bg);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  padding: 4.8rem 0;
+}
+
+.card-content {
+  width: 22%;
+}
+
+.card-content h2 {
+  font-size: var(--xlarge);
+  text-transform: uppercase;
+  line-height: 130%;
+  margin: 2.2rem 0 1.8rem;
+}
+
+.card-content p {
+  font-size: var(--large);
+}
+
+.card-content p span {
+  font-weight: 700;
+}
+
+.card-image-container {
+  width: 78%;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-content .link-underline {
+  display: inline-block;
+  margin-top: 3.2rem;
+}
